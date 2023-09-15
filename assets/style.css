@@ -1,0 +1,902 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+br {
+  display: block;
+}
+
+.anchor {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  background-color: rgba(0, 0, 0, 0.607);
+  border-radius: 5px 5px 0 0;
+  position: fixed;
+  bottom: 0;
+  right: 50px;
+}
+.anchor a {
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+.anchor a span {
+  color: white;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 300vh;
+  background-color: gray;
+}
+main .hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/charity-home.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 -20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main .hero .navbar {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 130px;
+}
+main .hero .navbar .logo {
+  width: 35%;
+  height: 130px;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .hero .navbar .logo img {
+  width: 270px;
+  margin-left: 70px;
+}
+main .hero .navbar .head_top {
+  width: 65%;
+  height: 130px;
+  justify-content: center;
+  align-items: center;
+}
+main .hero .navbar .head_top ul {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+main .hero .navbar .head_top ul li {
+  display: flex;
+  padding: 10px 30px;
+  position: relative;
+}
+main .hero .navbar .head_top ul li:hover > .drop {
+  display: flex;
+}
+main .hero .navbar .head_top ul li:nth-of-type(3) > a span {
+  font-size: 16px;
+  position: relative;
+  top: 3px;
+}
+main .hero .navbar .head_top ul li > a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.4s;
+  font-weight: 700;
+}
+main .hero .navbar .head_top ul li > a:hover {
+  color: #fec96b;
+}
+main .hero .navbar .head_top ul li > a:nth-of-type(6) {
+  background-color: #fec96b;
+  padding: 5px 10px;
+}
+main .hero .navbar .head_top ul > span > a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.4s;
+  font-weight: 700;
+  background-color: #fec96b;
+  padding: 10px 30px;
+}
+main .hero .navbar .head_top ul > span > a:hover {
+  background-color: #33465b;
+}
+main .hero .navbar .head_top .drop {
+  position: absolute;
+  flex-wrap: wrap;
+  width: 180px;
+  height: auto;
+  background-color: white;
+  left: 0;
+  top: 40px;
+  display: none;
+  border-radius: 4px;
+  font-size: 12px;
+}
+main .hero .navbar .head_top .drop > li {
+  width: 100%;
+  transition: 0.4s;
+}
+main .hero .navbar .head_top .drop > li > a {
+  color: rgb(92, 102, 104);
+  padding: 12px 0;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  transition: 0.4s;
+}
+main .hero .navbar .head_top .drop > li:hover {
+  background-color: #fec96b;
+}
+main .hero .navbar .head_top .drop > li:hover a {
+  color: white;
+}
+main .hero .hero-txt {
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+}
+main .hero .hero-txt h2,
+main .hero .hero-txt p {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+main .hero .hero-txt h2 {
+  font-size: 70px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+main .hero .hero-txt p {
+  font-size: 24px;
+}
+main .hero .hero-txt > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  margin-top: 24px;
+}
+main .hero .hero-txt > span > a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.4s;
+  font-weight: 700;
+  padding: 10px 30px;
+  transition: 0.4s;
+}
+main .hero .hero-txt > span > a:nth-of-type(1) {
+  border: 2px solid white;
+}
+main .hero .hero-txt > span > a:nth-of-type(1):hover {
+  color: #fec96b;
+  border: 2px solid #fec96b;
+}
+main .hero .hero-txt > span > a:nth-of-type(2) {
+  border: 2px solid #fec96b;
+  margin-left: 50px;
+  color: #fec96b;
+}
+main .hero .hero-txt > span > a:nth-of-type(2):hover {
+  color: white;
+  background-color: #33465b;
+  border: 2px solid white;
+}
+main .counts {
+  width: 100%;
+  height: 90vh;
+  background-color: burlywood;
+}
+main .counts .lside {
+  width: 65%;
+  height: 100%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+main .counts .lside > span {
+  width: 800px;
+  height: auto;
+  padding: 30px;
+}
+main .counts .lside > span > h2 {
+  font-size: 36px;
+  font-weight: 500;
+}
+main .counts .lside > span > hr {
+  width: 230px;
+  border: 2px solid #fec96b;
+  margin: 24px 0;
+}
+main .counts .lside > span > p {
+  color: #5c6668;
+  line-height: 40px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+main .counts .lside > span a {
+  background-color: #fec96b;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.4s;
+  font-weight: 700;
+  padding: 10px 30px;
+  transition: 0.2s;
+}
+main .counts .lside > span a:hover {
+  color: white;
+  background-color: #33465b;
+  border: 2px solid white;
+}
+main .counts .rside {
+  width: 35%;
+  height: 100%;
+  background-image: url(./img/home-content-bg-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+main .counts .rside .icon-container {
+  width: 100%;
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+}
+main .counts .rside .icon-container .box {
+  width: 80%;
+  font-size: 30px;
+  justify-content: center;
+  align-items: last baseline;
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+  color: white;
+}
+main .counts .rside .icon-container .box > span {
+  font-size: 45px;
+  transform: translate(0, 4px);
+  color: white;
+}
+main .counts .rside .icon-container .box > p {
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+}
+main .values {
+  width: 100%;
+  height: 120vh;
+  background-color: aliceblue;
+  background-image: url(./img/home-content-bg-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+}
+main .values .values-txt {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+main .values .values-txt > div {
+  width: 100%;
+  height: auto;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+main .values .values-txt > div > h2 {
+  font-size: 36px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+}
+main .values .values-txt > div > span {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+main .values .values-txt > div > span > hr {
+  width: 230px;
+  border: 2px solid #fec96b;
+  margin: 24px 0;
+}
+main .values .values-txt > div h4 {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+main .values .values-txt .container {
+  width: 100%;
+}
+main .values .values-txt .container > div {
+  width: 300px;
+  height: auto;
+  margin-top: 60px;
+}
+main .values .values-txt .container > div:nth-of-type(1), main .values .values-txt .container > div:nth-of-type(2), main .values .values-txt .container > div:nth-of-type(3) {
+  margin-right: 24px;
+}
+main .values .values-txt .container > div .box1 {
+  justify-content: center;
+  align-items: center;
+}
+main .values .values-txt .container > div .box1 a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 23px;
+  color: white;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+main .values .values-txt .container > div .box1 a span {
+  font-size: 70px;
+  color: #fec96b;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+main .values .values-txt .container > div .box1 a:hover span {
+  color: white;
+}
+main .values .values-txt .container > div .box1 article {
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  line-height: 36px;
+  color: rgb(229, 229, 229);
+}
+main .values .values-txt .container > div .box1 .lMore {
+  font-size: 18px;
+  padding: 12px 36px;
+  background-color: #fec96b;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin: 24px 0;
+  transition: 0.2s;
+}
+main .values .values-txt .container > div .box1 .lMore:hover {
+  color: white;
+  background-color: #33465b;
+}
+main .recent {
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+}
+main .recent .recent-txt {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+main .recent .recent-txt > div {
+  width: 100%;
+  height: auto;
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+main .recent .recent-txt > div > h2 {
+  font-size: 36px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+main .recent .recent-txt > div > span {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+main .recent .recent-txt > div > span > hr {
+  width: 230px;
+  border: 2px solid #fec96b;
+  margin: 24px 0;
+}
+main .recent .recent-txt > div p {
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: rgb(92, 102, 104);
+}
+main .recent .recent-txt .container {
+  width: 100%;
+  position: relative;
+}
+main .recent .recent-txt .container > div {
+  position: relative;
+  width: 300px;
+  height: auto;
+  margin-top: 60px;
+}
+main .recent .recent-txt .container > div:nth-of-type(1), main .recent .recent-txt .container > div:nth-of-type(2), main .recent .recent-txt .container > div:nth-of-type(3) {
+  margin-right: 24px;
+}
+main .recent .recent-txt .container > div .box1 {
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main .recent .recent-txt .container > div .box1 > a {
+  width: 280px;
+  height: 210px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+main .recent .recent-txt .container > div .box1 > a::before {
+  content: "";
+  align-content: center;
+  display: flex;
+  position: absolute;
+  width: 280px;
+  height: 210px;
+  background-color: rgba(225, 20, 20, 0);
+  transition: 0.4s;
+  transform: rotateY(-90deg);
+  transition: all 0.4s;
+}
+main .recent .recent-txt .container > div .box1 > a:hover::before {
+  width: 280px;
+  height: 210px;
+  background-color: rgba(254, 200, 107, 0.7607843137);
+  transform: rotateY(0);
+}
+main .recent .recent-txt .container > div .box1 > a figure {
+  width: 280px;
+  height: 210px;
+}
+main .recent .recent-txt .container > div .box1 > a figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .recent .recent-txt .container > div .box1 > a figure figcaption {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all 0.4s;
+}
+main .recent .recent-txt .container > div .box1 > a figure figcaption:hover {
+  opacity: 1;
+}
+main .view-hover {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  width: 100%;
+  height: 150px;
+  background-color: #408292;
+  justify-content: center;
+  align-items: center;
+}
+main .view-hover:hover {
+  background-color: #ed6967;
+}
+main .articles {
+  margin-top: 100px;
+  width: 100%;
+  height: 110vh;
+  justify-content: center;
+  align-items: center;
+}
+main .articles > div {
+  width: 100%;
+  height: 20vh;
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+main .articles > div > h2 {
+  font-size: 36px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+main .articles > div > span {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+main .articles > div > span > hr {
+  width: 230px;
+  border: 2px solid #fec96b;
+  margin: 24px 0 36px 0;
+}
+main .articles > div p {
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: rgb(92, 102, 104);
+}
+main .articles .contain {
+  width: 90%;
+  height: 80vh;
+}
+main .articles .contain .leftBig {
+  width: 50%;
+  height: 80vh;
+  border: 1px solid #e5e5e5;
+  border-bottom-width: 3px;
+  position: relative;
+}
+main .articles .contain .leftBig > figure {
+  width: 100%;
+  height: 80vh;
+}
+main .articles .contain .leftBig > figure .box2 {
+  width: 100%;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 36px 36px 0 36px;
+}
+main .articles .contain .leftBig > figure .box2 > a {
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+main .articles .contain .leftBig > figure .box2 > a::before {
+  content: "";
+  align-content: center;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(225, 20, 20, 0);
+  transition: 0.4s;
+  transform: rotateY(-90deg);
+  transition: all 0.4s;
+}
+main .articles .contain .leftBig > figure .box2 > a:hover::before {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(254, 200, 107, 0.7607843137);
+  transform: rotateY(0);
+}
+main .articles .contain .leftBig > figure .box2 > a > figure {
+  width: 100%;
+  height: 100%;
+}
+main .articles .contain .leftBig > figure .box2 > a > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .articles .contain .leftBig > figure .box2 > a > figure > figcaption {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all 0.4s;
+}
+main .articles .contain .leftBig > figure .box2 > a > figure > figcaption:hover {
+  opacity: 1;
+}
+main .articles .contain .leftBig > figure .box2 > a > figure > figcaption > a {
+  text-align: left;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #fec96b;
+}
+main .articles .contain .leftBig > figure .box2 > a > figure > figcaption > p {
+  margin-top: 16px;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  line-height: 36px;
+  text-align: left;
+}
+main .articles .contain .leftBig > figure .second-fig {
+  padding: 24px 24px;
+  height: 20vh;
+}
+main .articles .contain .leftBig > figure .second-fig > a {
+  width: 100%;
+  text-align: left;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #fec96b;
+}
+main .articles .contain .leftBig > figure .second-fig > p {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  line-height: 36px;
+  text-align: left;
+}
+main .articles .contain .rightBig {
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  padding-top: 24px;
+}
+main .articles .contain .rightBig .inner-row {
+  width: 100%;
+  height: 18vh;
+  align-items: flex-start;
+}
+main .articles .contain .rightBig .inner-row > div:first-of-type {
+  width: 30%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+main .articles .contain .rightBig .inner-row > div:first-of-type > figure {
+  justify-content: center;
+  align-items: center;
+}
+main .articles .contain .rightBig .inner-row > div:first-of-type > figure > img {
+  width: 90%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(0.8);
+  transition: all 0.4s;
+}
+main .articles .contain .rightBig .inner-row > div:first-of-type > figure:hover img {
+  box-shadow: -15px 15px 52px -18px rgba(0, 0, 0, 0.75);
+  transform: scale(0.86);
+}
+main .articles .contain .rightBig .inner-row > div:last-of-type {
+  width: 70%;
+  height: 100%;
+  justify-content: left;
+  line-height: 36px;
+  align-items: center;
+}
+main .articles .contain .rightBig .inner-row > div:last-of-type span {
+  width: 100%;
+}
+main .articles .contain .rightBig .inner-row > div:last-of-type span a {
+  text-align: left;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #fec96b;
+}
+main .articles .contain .rightBig .inner-row > div:last-of-type span p {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: rgb(92, 102, 104);
+  text-align: left;
+}
+main .article-hr {
+  margin: 50px 0;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+main .article-hr .article-hover {
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  height: 100%;
+  background-color: #408292;
+  align-items: center;
+}
+main .article-hr .article-hover:hover {
+  background-color: #ed6967;
+}
+main .volunteer {
+  width: 100%;
+  height: 80vh;
+  background-image: url(./img/home-footer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -120px;
+  justify-content: center;
+  align-items: center;
+}
+main .volunteer > div {
+  width: 900px;
+  height: auto;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  line-height: 36px;
+}
+main .volunteer > div > h2 {
+  font-size: 36px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+}
+main .volunteer > div > span {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+main .volunteer > div > span > hr {
+  width: 230px;
+  border: 2px solid #fec96b;
+  margin: 24px 0;
+}
+main .volunteer > div h4 {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+main .volunteer > div > p {
+  font-size: 22px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+main .volunteer > div > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  margin-top: 36px;
+}
+main .volunteer > div > span > a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.4s;
+  font-weight: 700;
+  padding: 5px 30px;
+  transition: 0.4s;
+  border: 2px solid white;
+}
+main .volunteer > div > span > a:first-of-type {
+  margin-right: 36px;
+}
+main .volunteer > div > span > a:hover {
+  border: 2px solid #fec96b;
+  color: #fec96b;
+}
+main .logo-nav {
+  width: 100%;
+  height: 180px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+main .logo-nav figure {
+  width: 400px;
+  padding: 24px 0;
+  justify-content: center;
+  align-items: center;
+}
+main .logo-nav figure img {
+  width: 300px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main footer {
+  width: 100%;
+  height: 120px;
+  background-color: bisque;
+  justify-content: center;
+  align-items: center;
+}
+main footer .top {
+  width: 100%;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+main footer .top > p {
+  padding: 24px;
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  text-align: center;
+}
+main footer .top > p > span {
+  color: #fec96b;
+  font-family: "Raleway", sans-serif;
+}
+main footer > div {
+  width: 100%;
+  height: 60px;
+  background: #f9f9f9;
+  justify-content: center;
+  align-items: center;
+}
+main footer > div span {
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+}
+main footer > div span a {
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 36px;
+  padding: 5px;
+  margin-right: 20px;
+}
+main .bookmark {
+  width: 100%;
+  height: 400px;
+  background-color: #333333;
+  position: fixed;
+  z-index: 999999;
+}/*# sourceMappingURL=style.css.map */
